@@ -236,16 +236,16 @@ console.log(getArtistByIndex(artists[8]));
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who lived in the 20th century (1900-2000) */
 
 function get20s(arr){
+  let twentiesArtists = [];
   for(let i = 0; i < arr.length; i++){
    if(arr[i].years >= "1900-2000"){
-    return arr[i].name;
+    twentiesArtists.push(arr[i].name);
+     console.log(twentiesArtists);
     }
   }
 }
 
-
 console.log(get20s(artists));
-
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
